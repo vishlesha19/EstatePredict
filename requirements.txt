@@ -1,6 +1,6 @@
-Flask
-sklearn
-pandas
-numpy
 matplotlib
 gunicorn
+Flask==3.0.3
+scikit-learn==1.5.0
+numpy==1.24.2
+pandas==2.1.0
