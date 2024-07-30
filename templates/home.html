@@ -1,1 +1,57 @@
-<h1>hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EstatePredict</title>
+</head>
+<body>
+    <h1>EstatePredict</h1>
+    <form action="{{ url_for('predict')}}"method="post">
+        <label for="CRIM">CRIM:</label>
+        <input type="text" id="CRIM" name="CRIM" required><br>
+
+        <label for="ZN">ZN:</label>
+        <input type="text" id="ZN" name="ZN" required><br>
+
+        <label for="INDUS">INDUS:</label>
+        <input type="text" id="INDUS" name="INDUS" required><br>
+
+        <label for="CHAS">CHAS:</label>
+        <input type="text" id="CHAS" name="CHAS" required><br>
+
+        <label for="NOX">NOX:</label>
+        <input type="text" id="NOX" name="NOX" required><br>
+
+        <label for="RM">RM:</label>
+        <input type="text" id="RM" name="RM" required><br>
+
+        <label for="AGE">AGE:</label>
+        <input type="text" id="AGE" name="AGE" required><br>
+
+        <label for="DIS">DIS:</label>
+        <input type="text" id="DIS" name="DIS" required><br>
+
+        <label for="RAD">RAD:</label>
+        <input type="text" id="RAD" name="RAD" required><br>
+
+        <label for="TAX">TAX:</label>
+        <input type="text" id="TAX" name="TAX" required><br>
+
+        <label for="PTRAIO">PTRAIO:</label>
+        <input type="text" id="PTRAIO" name="PTRAIO" required><br>
+
+        <label for="B">B:</label>
+        <input type="text" id="B" name="B" required><br>
+
+        <label for="LSTAT">LSTAT:</label>
+        <input type="text" id="LSTAT" name="LSTAT" required><br><br>
+
+        <button type="submit">Predit</button>
+        <br>
+        <br>
+    </form>
+
+    {{prediction_text}}
+</body>
+</html>
